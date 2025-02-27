@@ -81,6 +81,11 @@
                     object-fit: cover;
                     transform: translate(-50%, -50%); /* 비디오를 가운데 정렬 */
                   }
+                  @media screen and (max-width: 768px) {
+                    .intro-video {
+                      object-fit: contain; /* 모바일에서는 비디오가 짤리지 않도록 조정 */
+                    }
+                  }
                 </style>
               </div>
               <div class="intro--options">
